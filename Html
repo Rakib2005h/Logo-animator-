@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>লোগো অ্যানিমেশন জেনারেটর</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>লোগো অ্যানিমেশন তৈরি করুন</h1>
+        
+        <div class="input-section">
+            <textarea id="textPrompt" placeholder="আপনার লোগো অ্যানিমেশন বর্ণনা লিখুন..."></textarea>
+            <input type="file" id="imageUpload" accept="image/*">
+            <button onclick="generateAnimation()">জেনারেট করুন</button>
+        </div>
+        
+        <div id="preview"></div>
+        
+        <div class="output-options">
+            <button onclick="downloadAsGIF()">GIF ডাউনলোড</button>
+            <button onclick="downloadAsMP4()">MP4 ডাউনলোড</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
