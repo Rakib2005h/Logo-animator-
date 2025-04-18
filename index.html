@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI লোগো অ্যানিমেশন জেনারেটর</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-magic"></i> AI লোগো জেনারেটর</h1>
+        
+        <div class="input-section">
+            <textarea id="prompt" placeholder="আপনার লোগো সম্পর্কে বর্ণনা দিন... (例: 'গোল্ডেন 3D টেক্সট লোগো')"></textarea>
+            <button id="generate-btn"><i class="fas fa-robot"></i> জেনারেট করুন</button>
+        </div>
+        
+        <div class="animation-controls">
+            <select id="animation-type">
+                <option value="spin">ঘূর্ণন</option>
+                <option value="pulse">স্পন্দন</option>
+                <option value="float">ভাসমান</option>
+                <option value="3d">3D রোটেশন</option>
+            </select>
+            <button id="download-btn"><i class="fas fa-download"></i> ডাউনলোড</button>
+        </div>
+        
+        <div class="preview-container">
+            <canvas id="logo-canvas"></canvas>
+        </div>
+    </div>
+
+    <!-- লাইব্রেরি স크্রিপ্ট -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ccapture.js@1.1.0/build/CCapture.all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
